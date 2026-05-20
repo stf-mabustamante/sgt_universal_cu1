@@ -1,0 +1,30 @@
+sat_vmc_dia:
+  outputs:
+    develop:
+      dataset: production_universal_sgt
+      project: bch-prj-gds-sgt-dv-a1e1
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      method: oauth
+      priority: interactive
+      threads: 3
+      type: bigquery
+    qa:
+      dataset: production_universal_sgt
+      project: bch-prj-gds-sgt-qa-cc12
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      method: oauth
+      priority: interactive
+      threads: 10
+      type: bigquery
+    production:
+      dataset: production_universal_sgt
+      project: bch-prj-gds-sgt-pr-45c3
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      method: oauth
+      priority: interactive
+      threads: 10
+      type: bigquery
+  target: develop

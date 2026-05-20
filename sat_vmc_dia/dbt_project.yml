@@ -1,0 +1,21 @@
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: 'sat_vmc_dia'
+version: '1.0.0'
+config-version: 2
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'sat_vmc_dia'
+
+vars:
+  periodo: '1900-01-01' #'2022-08-20'
+  ambient: 'develop'
+
+# Estas configuraciones las usa dbt para saber donde buscar los diferentes tipos de archivos.
+model-paths: ["models"]
+macro-paths: ["macros"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
