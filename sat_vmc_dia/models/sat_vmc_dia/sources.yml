@@ -1,0 +1,16 @@
+
+version: 2
+
+sources:
+
+  - name: production_stage
+    description: Capa stage del proyecto de SGT
+    schema: production_stage
+    tables:
+      - name: tbl_ap0516_vmc_dia
+
+  - name: production_universal_sgt
+    description: Capa Universal de SGT
+    schema: production_universal_sgt
+    tables:
+      - name: hub_moneda_bch
